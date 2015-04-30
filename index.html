@@ -3,13 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title>html5 game</title>
-        <script src="game.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Orbitron:400,900' rel='stylesheet' type='text/css'>
+        <script async src="game.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="gameName">Hello world!</div>
-        <canvas id="map"></canvas>
-        <input id="drawBtn" type="button" value="Draw">
-        <input id="clearBtn" type="button" value="Clear">
+        <div id="gameName">STEAMPUNK SHOOTER</div>
+        <div style="position: relative;">
+            <canvas id="map" 
+   style="position: absolute; left: 100px; top: 50px; z-index: 0;"></canvas>
+            <canvas id="player" 
+   style="position: absolute; left: 100px; top: 50px; z-index: 1;"></canvas>
+            <canvas id="enemy"></canvas>
+        </div>
+        <div  id="footer">
+            <input id="drawBtn" type="button" value="Draw">
+            <input id="clearBtn" type="button" value="Clear">
+        </div>
     </body>
 </html>
